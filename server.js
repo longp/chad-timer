@@ -4,7 +4,7 @@ const app = express();
 require('dotenv');
 const path = require('path');
 
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 app.use('/assets', express.static(path.join(__dirname, 'assets')))
 app.use('/public', express.static(path.join(__dirname, 'public')))
 app.get("/", (req,res)=> {
