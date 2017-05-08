@@ -4,13 +4,19 @@
 }
 
 #play-ctrl {
-  margin-top:5vh;
+  color: #00FFFF ;
 }
 
 #chad-time {
   color:#cc33ff;
 }
 
+#hide-chads {
+  background-color: #00FFFF
+}
+#show-chads {
+  background-color: #00FFFF
+}
 .chad-img {
   height:55px;
   width: 50px;
@@ -33,7 +39,11 @@
 }
 
 
-
+ul li{
+  list-style: none;
+  width: auto;
+  float: left;
+}
 
 @import url('http://fonts.googleapis.com/css?family=Lato');
 
@@ -41,4 +51,8 @@ body, html{
   height: 100%;
   background: #222222;
 	font-family: 'Lato', sans-serif;
+}
+
+#chad-units {
+  color:#00FFFF ;
 }

@@ -5,7 +5,6 @@
     <title>Where is Chad?</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="public/index.css">
   </head>
   <body>
@@ -16,34 +15,21 @@
       <div class="row">
         <div class="col-md-12">
           <div class="col-md-3">
-            <button id="hide-chads" type="button" class="btn btn-warning"> HIDE CHADS </button>
-            <button id="show-chads" type="button" class="btn btn-info hidden"> SHOW CHADS </button>
+            <button id="hide-chads" type="button" class="btn"> HIDE CHADS </button>
+            <button id="show-chads" type="button" class="btn hidden"> SHOW CHADS </button>
+            <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+    </ul>
+  </div>
           </div>
-          <div class="col-md-6">
-            <ul>
-              <li>
-                <input type="radio" id="f-option" name="selector">
-                <label for="f-option">Pizza</label>
-
-                <div class="check"></div>
-              </li>
-
-              <li>
-                <input type="radio" id="s-option" name="selector">
-                <label for="s-option">Bacon</label>
-
-                <div class="check"><div class="inside"></div></div>
-              </li>
-
-              <li>
-                <input type="radio" id="t-option" name="selector">
-                <label for="t-option">Cats</label>
-
-                <div class="check"><div class="inside"></div></div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-3 text-right">
+          <div id="play-ctrl" class="col-md-3 text-right">
             <span id="play"><i class="fa fa-play fa-2x" aria-hidden="true"></i></span>
             <span id="stop"><i class="fa fa-stop fa-2x" aria-hidden="true"></i></span>
           </div>
@@ -82,7 +68,9 @@
       </div>
     </div>
 
-
+    <div class="row">
+      <span id="chad-counter"></span>
+    </div>
     <div class="row">
       <div id="chad-container" class="container">
         <div class="row">
@@ -98,6 +86,8 @@
 
     <!-- 3 checkboxes why chad mmoved idk, did chad move to tx yes, does he live in jc -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
     <script type="text/javascript" src="public/app.js"></script>
