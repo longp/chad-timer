@@ -10,14 +10,28 @@ $("#show-chads").on("click", showChad)
 $("#yo").on("click", function(){console.log("yo")})
 let startDate = moment('05/07/2016 9:00:00 AM', 'MM/DD/YYYY hh:m:s A');
 let daysDiff = moment().diff(startDate, "days")
-let arr = [];
-let imgSrc = "../assets/cropped_chad.jpg"
-let imgHtml = ''
-
-  imgHtml += '<div class="col-md-1">'
-  imgHtml += '<img class="img-responsive" src="' + imgSrc +'">'
-  imgHtml += '</div>'
+let Chads = [
+  "../assets/chad1.jpeg",
+  "../assets/chad2.jpeg",
+  "../assets/chad3.jpeg",
+  "../assets/chad4.jpeg",
+];
+let randomIndex = _.random(0,3);
+console.log(randomIndex)
+console.log(Chads[randomIndex])
+let imgSrc = "../asset/cropped_chad.jpg"
+// let imgHtml = ''
+//
+//   imgHtml += '<div class="col-md-1">'
+//   imgHtml += '<img class="img-responsive" src="' + Chads[randomIndex] +'">'
+//   imgHtml += '</div>'
 for (var i = 0; i < daysDiff; i++) {
+  randomIndex = _.random(0,3)
+  let imgHtml = ''
+
+    imgHtml += '<div class="col-md-1 col-xs-1 col-lg-1">'
+    imgHtml += '<img   class="img-responsive chad-img" src="' + Chads[randomIndex] +'">'
+    imgHtml += '</div>'
   $("#chad-box").append(imgHtml)
 }
 

@@ -1,16 +1,44 @@
 #days-since {
-  font-size: 3em;
-  color: green;
+  font-size:1.25em;
+  color: #0DFF92;
 }
-#chad-days {
-  font-size: 3em;
-  color:pink
-}
+
 #play-ctrl {
   margin-top:5vh;
 }
 
 #chad-time {
-  margin-top:5vh;
-  margin-bottom:5vh;
+  color:#cc33ff;
+}
+
+.chad-img {
+  height:55px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+#chad-box {
+  padding:10px;
+  max-height:50vh;
+  border: 2px solid #AAAAAA;
+  border-radius:10px;
+  overflow: auto;
+}
+#where-is-chad {
+  font-size: 5em;
+  color: #0DFF92
+}
+#chad-left-box {
+  /*border-top:10px solid #AAAAAA;
+  border-bottom:10px solid #AAAAAA;*/
+}
+
+
+
+
+@import url('http://fonts.googleapis.com/css?family=Lato');
+
+body, html{
+  height: 100%;
+  background: #222222;
+	font-family: 'Lato', sans-serif;
 }
