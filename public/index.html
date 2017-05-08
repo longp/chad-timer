@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chads Gone</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/index.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row text-center" id="play-ctrl">
+        <span id="play"><i class="fa fa-play fa-2x" aria-hidden="true"></i></span>
+        <span id="stop"><i class="fa fa-stop fa-2x" aria-hidden="true"></i></span>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <span id="days-since">Since Chad Left: </span>
+          <div class="" id="chad-control">
+            <button id="hide-chads" type="button" class="btn btn-warning"> HIDE CHADS </button>
+            <button id="show-chads" type="button" class="btn btn-info hidden"> SHOW CHADS </button>
+          </div>
+          <div id="chad-time" class="row text-center">
+            <div class="col-md-2 col-xs-4">
+              <span id="chad-years"></span>
+            </div>
+            <div class="col-md-2 col-xs-4">
+              <span id="chad-months"></span>
+            </div>
+            <div class="col-md-2 col-xs-4">
+              <span id="chad-weeks"></span>
+            </div>
+            <div class="col-md-2 col-xs-4">
+              <span id="chad-hours"></span>
+            </div>
+            <div class="col-md-2 col-xs-4">
+              <span id="chad-minutes"></span>
+            </div>
+            <div class="col-md-2 col-xs-4">
+              <span id="chad-seconds"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div id="chad-container" class="container">
+        <div class="row">
+          <div id="chad-box" class="col-md-12">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio id="myAudio" src="assets/dont-you.mp3">
+
+    </audio>
+
+    <!-- 3 checkboxes why chad mmoved idk, did chad move to tx yes, does he live in jc -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script type="text/javascript" src="public/app.js"></script>
+  </body>
+</html>
